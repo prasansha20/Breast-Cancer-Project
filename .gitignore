@@ -31,3 +31,6 @@ Thumbs.db
 
 # Temp scripts
 _*.py
+
+# Local automation (not part of the published project)
+build_project.py
