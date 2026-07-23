@@ -1,0 +1,21 @@
+flowchart TD
+    A[Start] --> B[Import Libraries<br/>TensorFlow, NumPy, Pandas, etc.]
+    B --> C[Load Breast Cancer Dataset<br/>569 samples, 30 features]
+    C --> D[Explore Dataset<br/>Shapes, labels, statistics]
+    D --> E[Train-Test Split<br/>80% train / 20% test]
+    E --> F[Standardize Features<br/>StandardScaler]
+    F --> G[Build ANN Model<br/>Input 30 → Dense 20 → Dense 2]
+    G --> H[Compile Model<br/>Adam + Sparse Categorical Crossentropy]
+    H --> I[Train Model<br/>10 Epochs with Validation]
+    I --> J[Plot Accuracy & Loss Curves]
+    J --> K[Evaluate on Test Set]
+    K --> L[Confusion Matrix & Classification Report]
+    L --> M[Predict Diagnosis + Confidence]
+    M --> N[End]
+
+    style A fill:#1B4F72,stroke:#0D2B3E,color:#FFFFFF
+    style N fill:#1B4F72,stroke:#0D2B3E,color:#FFFFFF
+    style G fill:#117A65,stroke:#0B5345,color:#FFFFFF
+    style I fill:#B9770E,stroke:#7E5109,color:#FFFFFF
+    style K fill:#6C3483,stroke:#4A235A,color:#FFFFFF
+    style M fill:#1A5276,stroke:#154360,color:#FFFFFF

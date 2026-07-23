@@ -1,0 +1,14 @@
+Breast Cancer ANN Build Metrics
+========================================
+test_loss=0.107703
+test_accuracy=0.973684
+final_train_acc=0.963325
+final_val_acc=0.956522
+final_train_loss=0.143149
+final_val_loss=0.163916
+epochs=10
+trainable_params=662
+n_samples=569
+n_features=30
+n_test=114
+test_accuracy_percent=97.37

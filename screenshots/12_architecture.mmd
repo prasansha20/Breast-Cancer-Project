@@ -1,0 +1,18 @@
+flowchart LR
+    subgraph INPUT["Input Layer"]
+        I["30 Features<br/>Tumor Measurements"]
+    end
+
+    subgraph H1["Hidden Layer"]
+        D1["Dense 20<br/>ReLU"]
+    end
+
+    subgraph OUT["Output Layer"]
+        O["Dense 2<br/>Softmax<br/>Malignant / Benign"]
+    end
+
+    I --> D1 --> O
+
+    style I fill:#2874A6,stroke:#1A5276,color:#FFFFFF
+    style D1 fill:#B9770E,stroke:#7E5109,color:#FFFFFF
+    style O fill:#6C3483,stroke:#4A235A,color:#FFFFFF
